@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Platforms</key>
+	<array/>
+    <key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+    <key>Options</key>
+    <array>
+        <dict>
+            <key>Identifier</key>
+		    <string>productName</string>
+            <key>Required</key>
+			<true/>
+            <key>Name</key>
+			<string>Module Name:</string>
+            <key>Type</key>
+			<string>text</string>
+            <key>Default</key>
+			<string>Module Name</string>
+            <key>NotPersisted</key>
+			<true/>
+        </dict>
+    </array>
+</dict>
+</plist>
