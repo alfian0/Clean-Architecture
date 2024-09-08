@@ -1,5 +1,5 @@
 // Created with MVVM 2024
-// Git Repo: https://github.com/alfian0
+// Git Repo: https://github.com/alfian0/Clean-Architecture.git
 // ___FILENAME___
 // ___PROJECTNAME___
 //

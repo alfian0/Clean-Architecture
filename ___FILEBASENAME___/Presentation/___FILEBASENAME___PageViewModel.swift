@@ -1,5 +1,5 @@
 // Created with MVVM 2024
-// Git Repo: https://github.com/alfian0
+// Git Repo: https://github.com/alfian0/Clean-Architecture.git
 // ___FILENAME___
 // ___PROJECTNAME___
 //
@@ -18,6 +18,12 @@ final class ___VARIABLE_productName___PageViewModel: ObservableObject {
 	init(repository: ___VARIABLE_productName___Repository, params: ___VARIABLE_productName___PageViewModelParams) {
 		self.repository = repository
 	}
+
+	deinit {
+    	self.cancellables.forEach { cancellable in
+      		cancellable.cancel()
+    	}
+  	}
 }
 
 extension ___VARIABLE_productName___PageViewModel {
