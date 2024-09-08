@@ -20,8 +20,11 @@ struct ___VARIABLE_productName___PageView: View {
 	}
 	
 	var body: some View {
-		Text(LocalizableString.empty)
-			.font(FontFamily.Roboto.bold.swiftUIFont(size: 20))
+		VStack {
+			Text(LocalizableString.empty)
+				.font(FontFamily.Roboto.bold.swiftUIFont(size: 20))
+		}
+		.navigationBarTitle("___VARIABLE_productName___")
 	}
 }
 
