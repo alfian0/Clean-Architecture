@@ -25,6 +25,6 @@ struct ___VARIABLE_productName___PageView: View {
 	}
 }
 
-// #Preview {
-//	___VARIABLE_productName___Container(using: Container()).container.resolve(___VARIABLE_productName___PageView.self, argument: ___VARIABLE_productName___PageViewParamsImpl(databasename: "", urlString: ""))
-// }
+#Preview {
+	___VARIABLE_productName___Container(using: Container()).start(params: ___VARIABLE_productName___PageViewParamsImpl())
+}
