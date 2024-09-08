@@ -20,10 +20,10 @@ final class ___VARIABLE_productName___PageViewModel: ObservableObject {
 	}
 
 	deinit {
-    	self.cancellables.forEach { cancellable in
-      		cancellable.cancel()
-    	}
-  	}
+		self.cancellables.forEach { cancellable in
+				cancellable.cancel()
+		}
+	}
 }
 
 extension ___VARIABLE_productName___PageViewModel {
