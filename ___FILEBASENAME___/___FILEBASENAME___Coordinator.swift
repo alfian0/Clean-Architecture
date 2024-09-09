@@ -13,12 +13,13 @@ final class ___VARIABLE_productName___Coordinator: Coordinator {
 	var childCoordinator: [Coordinator] = [Coordinator]()
 	var navigationController: UINavigationController
 	
-	init(navigationController: UINavigationController) {
+	init(navigationController: UINavigationController = UINavigationController()) {
 		self.navigationController = navigationController
 	}
 	
 	func start(with params: ___VARIABLE_productName___PageViewParamsImpl) {
 		let view = AppContainerImpl.shared.get___VARIABLE_productName___Page(params: params)
+		view.viewModel.set(coordinator: self)
 		let viewController = UIHostingController(rootView: view)
 		viewController.hidesBottomBarWhenPushed = true
 		

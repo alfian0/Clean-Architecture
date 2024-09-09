@@ -12,6 +12,7 @@ import Combine
 //sourcery: Injected
 final class ___VARIABLE_productName___PageViewModel: ObservableObject {
 	@Published var isLoading: Bool = false
+	private var coordinator: ___VARIABLE_productName___Coordinator?
 	private let repository: ___VARIABLE_productName___Repository
 	private var cancellables: Set<AnyCancellable> = []
 
@@ -27,5 +28,7 @@ final class ___VARIABLE_productName___PageViewModel: ObservableObject {
 }
 
 extension ___VARIABLE_productName___PageViewModel {
-	
+	func set(coordinator: ___VARIABLE_productName___Coordinator) {
+		self.coordinator = coordinator
+	}
 }
