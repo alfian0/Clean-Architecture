@@ -6,6 +6,7 @@
 // Created by ___FULLUSERNAME___ on ___DATE___.
 //
 
+import Foundation
 import Alamofire
 
 enum ___VARIABLE_productName___API {
@@ -46,6 +47,12 @@ extension ___VARIABLE_productName___API: API {
 	var headers: HTTPHeaders? {
 		switch self {
 			default: nil
+		}
+	}
+
+	var sampleData: Data {
+		switch self {
+			default: Data()
 		}
 	}
 }
