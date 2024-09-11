@@ -8,4 +8,4 @@
 
 import Foundation
 
-struct ___VARIABLE_productName___Response: Codable {}
+struct ___VARIABLE_productName___Response: Codable, Equatable {}
