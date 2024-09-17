@@ -17,9 +17,8 @@ final class ___VARIABLE_productName___Coordinator: Coordinator {
 		self.navigationController = navigationController
 	}
 	
-	func start(with params: ___VARIABLE_productName___PageViewParamsImpl) {
-		let view = AppContainerImpl.shared.get___VARIABLE_productName___Page(params: params)
-		view.viewModel.set(coordinator: self)
+	func start() {
+		let view = AppAssembler.shared.assembler.resolver.resolve(___VARIABLE_productName___PageView.self, argument: self.navigationController)
 		let viewController = UIHostingController(rootView: view)
 		viewController.hidesBottomBarWhenPushed = true
 		

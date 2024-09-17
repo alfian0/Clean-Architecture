@@ -12,12 +12,13 @@ import Combine
 //sourcery: Injected
 final class ___VARIABLE_productName___PageViewModel: ObservableObject {
 	@Published var isLoading: Bool = false
-	private var coordinator: ___VARIABLE_productName___Coordinator?
+	private let coordinator: ___VARIABLE_productName___Coordinator
 	private let repository: ___VARIABLE_productName___Repository
 	private var cancellables: Set<AnyCancellable> = []
 
-	init(repository: ___VARIABLE_productName___Repository, params: ___VARIABLE_productName___PageViewModelParams) {
+	init(repository: ___VARIABLE_productName___Repository, coordinator: ___VARIABLE_productName___Coordinator) {
 		self.repository = repository
+		self.coordinator = coordinator
 	}
 
 	deinit {
@@ -28,7 +29,5 @@ final class ___VARIABLE_productName___PageViewModel: ObservableObject {
 }
 
 extension ___VARIABLE_productName___PageViewModel {
-	func set(coordinator: ___VARIABLE_productName___Coordinator) {
-		self.coordinator = coordinator
-	}
+	
 }

@@ -14,7 +14,7 @@ final class ___VARIABLE_productName___Repository: DAO {
 	private let localDAO: Local___VARIABLE_productName___DAO
 	private let remoteDAO: Remote___VARIABLE_productName___DAO
 	
-	init(localDAO: Local___VARIABLE_productName___DAO, remoteDAO: Remote___VARIABLE_productName___DAO, params: ___VARIABLE_productName___RepositoryParams) {
+	init(localDAO: Local___VARIABLE_productName___DAO, remoteDAO: Remote___VARIABLE_productName___DAO) {
 		self.localDAO = localDAO
 		self.remoteDAO = remoteDAO
 	}

@@ -11,14 +11,8 @@ import Swinject
 
 //sourcery: ___VARIABLE_productName___, Injected
 struct ___VARIABLE_productName___PageView: View {
-	@ObservedObject var viewModel: ___VARIABLE_productName___PageViewModel
-	private let params: ___VARIABLE_productName___PageViewParams
-	
-	init(viewModel: ___VARIABLE_productName___PageViewModel, params: ___VARIABLE_productName___PageViewParams) {
-		self.viewModel = viewModel
-		self.params = params
-	}
-	
+	@StateObject var viewModel: ___VARIABLE_productName___PageViewModel
+
 	var body: some View {
 		VStack {
 			Text(LocalizableString.empty)
@@ -29,5 +23,5 @@ struct ___VARIABLE_productName___PageView: View {
 }
 
 #Preview {
-	___VARIABLE_productName___Container(using: Container()).start(params: ___VARIABLE_productName___PageViewParamsImpl())
+	AppAssembler.shared.assembler.resolver.resolve(___VARIABLE_productName___PageView.self, argument: UINavigationController())
 }
