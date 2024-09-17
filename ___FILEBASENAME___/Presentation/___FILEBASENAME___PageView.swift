@@ -10,7 +10,7 @@ import SwiftUI
 import Swinject
 
 //sourcery: ___VARIABLE_productName___, Injected
-struct ___VARIABLE_productName___PageView: View {
+struct ___VARIABLE_productName___PageView<ViewModel>: View where ViewModel: I___VARIABLE_productName___PageViewModel {
 	@StateObject var viewModel: ___VARIABLE_productName___PageViewModel
 
 	var body: some View {
@@ -23,5 +23,5 @@ struct ___VARIABLE_productName___PageView: View {
 }
 
 #Preview {
-	AppAssembler.shared.assembler.resolver.resolve(___VARIABLE_productName___PageView.self, argument: UINavigationController())
+	AppAssembler.shared.assembler.resolver.resolve(___VARIABLE_productName___PageView<___VARIABLE_productName___PageViewModel>.self, argument: UINavigationController())
 }

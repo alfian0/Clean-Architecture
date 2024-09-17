@@ -25,7 +25,7 @@ final class ___VARIABLE_productName___PresentationAssembly: Assembly {
 			return ___VARIABLE_productName___PageViewModel(repository: repository, coordinator: coordinator)
 		}
 		
-		container.register(___VARIABLE_productName___PageView.self) { (resolver, navigationController: UINavigationController) in
+		container.register(___VARIABLE_productName___PageView<___VARIABLE_productName___PageViewModel>.self) { (resolver, navigationController: UINavigationController) in
 			guard let viewModel = resolver.resolve(___VARIABLE_productName___PageViewModel.self, argument: navigationController) else {
 				fatalError()
 			}

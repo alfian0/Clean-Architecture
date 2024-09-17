@@ -28,6 +28,6 @@ final class ___VARIABLE_productName___PageViewModel: ObservableObject {
 	}
 }
 
-extension ___VARIABLE_productName___PageViewModel {
+extension ___VARIABLE_productName___PageViewModel: I___VARIABLE_productName___PageViewModel {
 	
 }
