@@ -10,7 +10,7 @@ import Foundation
 import Combine
 
 //sourcery: Injected
-final class ___VARIABLE_productName___Repository: DAO {
+final class ___VARIABLE_productName___Repository: I___VARIABLE_productName___Repository {
 	private let localDAO: Local___VARIABLE_productName___DAO
 	private let remoteDAO: Remote___VARIABLE_productName___DAO
 	

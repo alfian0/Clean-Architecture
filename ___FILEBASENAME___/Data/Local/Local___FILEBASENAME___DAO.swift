@@ -10,7 +10,7 @@ import CoreData
 import Combine
 
 //sourcery: Injected
-final class Local___VARIABLE_productName___DAO: DAO {
+final class Local___VARIABLE_productName___DAO: ILocal___VARIABLE_productName___DAO {
 	init() {}
 	
 	func get(by id: Int) -> AnyPublisher<___VARIABLE_productName___Entity, Error> {

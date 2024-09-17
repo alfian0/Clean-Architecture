@@ -10,7 +10,7 @@ import Foundation
 import Combine
 
 //sourcery: Injected
-class Remote___VARIABLE_productName___DAO: DAO {
+class Remote___VARIABLE_productName___DAO: IRemote___VARIABLE_productName___DAO {
 	init() {}
 	
 	func get(by id: Int) -> AnyPublisher<___VARIABLE_productName___Response, Error> {
