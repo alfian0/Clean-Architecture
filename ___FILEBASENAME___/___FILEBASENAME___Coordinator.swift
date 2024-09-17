@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 
 final class ___VARIABLE_productName___Coordinator: Coordinator {
-	var childCoordinator: [Coordinator] = [Coordinator]()
+	var childCoordinator: [any Coordinator] = [any Coordinator]()
 	var navigationController: UINavigationController
 	
 	init(navigationController: UINavigationController = UINavigationController()) {
