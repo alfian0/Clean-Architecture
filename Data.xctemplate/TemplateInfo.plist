@@ -5,7 +5,7 @@
     <key>Platforms</key>
   <array/>
     <key>Kind</key>
-  <string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+    <string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
     <key>Options</key>
     <array>
         <dict>
