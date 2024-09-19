@@ -9,23 +9,23 @@
 import Swinject
 
 final class ___VARIABLE_productName___DomainAssembly: Assembly {
-	func assemble(container: Swinject.Container) {
-		container.register(Local___VARIABLE_productName___DAO.self) { resolver in
-			return Local___VARIABLE_productName___DAO()
-		}
-		
-		container.register(Remote___VARIABLE_productName___DAO.self) { resolver in
-			return Remote___VARIABLE_productName___DAO()
-		}
-		
-		container.register(___VARIABLE_productName___Repository.self) { resolver in
-			guard let localDAO = resolver.resolve(Local___VARIABLE_productName___DAO.self) else {
-				fatalError()
-			}
-			guard let remoteDAO = resolver.resolve(Remote___VARIABLE_productName___DAO.self) else {
-				fatalError()
-			}
-			return ___VARIABLE_productName___Repository(localDAO: localDAO, remoteDAO: remoteDAO)
-		}
-	}
+  func assemble(container: Swinject.Container) {
+    container.register(Local___VARIABLE_productName___DAO.self) { resolver in
+      return Local___VARIABLE_productName___DAO()
+    }
+
+    container.register(Remote___VARIABLE_productName___DAO.self) { resolver in
+      return Remote___VARIABLE_productName___DAO()
+    }
+
+    container.register(___VARIABLE_productName___Repository.self) { resolver in
+      guard let localDAO = resolver.resolve(Local___VARIABLE_productName___DAO.self) else {
+        fatalError()
+      }
+      guard let remoteDAO = resolver.resolve(Remote___VARIABLE_productName___DAO.self) else {
+        fatalError()
+      }
+      return ___VARIABLE_productName___Repository(localDAO: localDAO, remoteDAO: remoteDAO)
+    }
+  }
 }

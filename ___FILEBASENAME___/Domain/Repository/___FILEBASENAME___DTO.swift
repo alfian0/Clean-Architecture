@@ -9,7 +9,7 @@
 import Foundation
 
 struct ___VARIABLE_productName___DTO: Equatable, Identifiable {
-	var id: String {
-		return UUID().uuidString
-	}
+  var id: String {
+    return UUID().uuidString
+  }
 }

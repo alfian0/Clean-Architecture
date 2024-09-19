@@ -11,23 +11,21 @@ import Combine
 
 //sourcery: Injected
 final class ___VARIABLE_productName___PageViewModel: ObservableObject {
-	@Published var isLoading: Bool = false
-	private let coordinator: ___VARIABLE_productName___Coordinator
-	private let repository: ___VARIABLE_productName___Repository
-	private var cancellables: Set<AnyCancellable> = []
+  @Published var isLoading: Bool = false
+  private let coordinator: ___VARIABLE_productName___Coordinator
+  private let repository: ___VARIABLE_productName___Repository
+  private var cancellables: Set<AnyCancellable> = []
 
-	init(repository: ___VARIABLE_productName___Repository, coordinator: ___VARIABLE_productName___Coordinator) {
-		self.repository = repository
-		self.coordinator = coordinator
-	}
+  init(repository: ___VARIABLE_productName___Repository, coordinator: ___VARIABLE_productName___Coordinator) {
+    self.repository = repository
+    self.coordinator = coordinator
+  }
 
-	deinit {
-		self.cancellables.forEach { cancellable in
-				cancellable.cancel()
-		}
-	}
+  deinit {
+    self.cancellables.forEach { cancellable in
+        cancellable.cancel()
+    }
+  }
 }
 
-extension ___VARIABLE_productName___PageViewModel: I___VARIABLE_productName___PageViewModel {
-	
-}
+extension ___VARIABLE_productName___PageViewModel: I___VARIABLE_productName___PageViewModel {}

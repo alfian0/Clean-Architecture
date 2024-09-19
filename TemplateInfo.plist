@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
     <key>Platforms</key>
-	<array/>
+  <array/>
     <key>Kind</key>
-	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+  <string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
     <key>Options</key>
     <array>
         <dict>
             <key>Identifier</key>
-		    <string>productName</string>
+        <string>productName</string>
             <key>Required</key>
-			<true/>
+      <true/>
             <key>Name</key>
-			<string>Module Name:</string>
+      <string>Module Name:</string>
             <key>Type</key>
-			<string>text</string>
+      <string>text</string>
             <key>Default</key>
-			<string>Module Name</string>
+      <string>Module Name</string>
             <key>NotPersisted</key>
-			<true/>
+      <true/>
         </dict>
     </array>
 </dict>

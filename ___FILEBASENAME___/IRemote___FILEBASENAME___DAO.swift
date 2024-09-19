@@ -9,9 +9,9 @@
 import Combine
 
 protocol IRemote___VARIABLE_productName___DAO {
-	func get(by id: Int) -> AnyPublisher<___VARIABLE_productName___Response, Error>
-	func getAll() -> AnyPublisher<[___VARIABLE_productName___Response], Error>
-	func add(with data: ___VARIABLE_productName___Response) -> AnyPublisher<Bool, Error>
-	func update(with data: ___VARIABLE_productName___Response) -> AnyPublisher<Bool, Error>
-	func delete(by id: Int) -> AnyPublisher<Bool, Error>
+  func get(by id: Int) -> AnyPublisher<___VARIABLE_productName___Response, Error>
+  func getAll() -> AnyPublisher<[___VARIABLE_productName___Response], Error>
+  func add(with data: ___VARIABLE_productName___Response) -> AnyPublisher<Bool, Error>
+  func update(with data: ___VARIABLE_productName___Response) -> AnyPublisher<Bool, Error>
+  func delete(by id: Int) -> AnyPublisher<Bool, Error>
 }

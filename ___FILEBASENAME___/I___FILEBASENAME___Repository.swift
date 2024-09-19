@@ -9,9 +9,9 @@
 import Combine
 
 protocol I___VARIABLE_productName___Repository {
-	func get(by id: Int) -> AnyPublisher<___VARIABLE_productName___DTO, Error>
-	func getAll() -> AnyPublisher<[___VARIABLE_productName___DTO], Error>
-	func add(with data: ___VARIABLE_productName___DTO) -> AnyPublisher<Bool, Error>
-	func update(with data: ___VARIABLE_productName___DTO) -> AnyPublisher<Bool, Error>
-	func delete(by id: Int) -> AnyPublisher<Bool, Error>
+  func get(by id: Int) -> AnyPublisher<___VARIABLE_productName___DTO, Error>
+  func getAll() -> AnyPublisher<[___VARIABLE_productName___DTO], Error>
+  func add(with data: ___VARIABLE_productName___DTO) -> AnyPublisher<Bool, Error>
+  func update(with data: ___VARIABLE_productName___DTO) -> AnyPublisher<Bool, Error>
+  func delete(by id: Int) -> AnyPublisher<Bool, Error>
 }

@@ -13,46 +13,46 @@ enum ___VARIABLE_productName___API {
     case endpoint
 }
 
-extension ___VARIABLE_productName___API: API {	
-	var path: String {
-		switch self {
-			default: ""
-		}
-	}
-	
-	var method: HTTPMethod {
-		switch self {
-			default: .get
-		}
-	}
-	
-	var query: Parameters? {
-		switch self {
-			default: nil
-		}
-	}
-	
-	var parameters: Parameters? {
-		switch self {
-			default: nil
-		}
-	}
-	
-	var encoding: ParameterEncoding {
-		switch self {
-			default: JSONEncoding.default
-		}
-	}
-	
-	var headers: HTTPHeaders? {
-		switch self {
-			default: nil
-		}
-	}
+extension ___VARIABLE_productName___API: API {  
+  var path: String {
+    switch self {
+      default: ""
+    }
+  }
 
-	var sampleData: Data {
-		switch self {
-			default: Data()
-		}
-	}
+  var method: HTTPMethod {
+    switch self {
+      default: .get
+    }
+  }
+
+  var query: Parameters? {
+    switch self {
+      default: nil
+    }
+  }
+
+  var parameters: Parameters? {
+    switch self {
+      default: nil
+    }
+  }
+
+  var encoding: ParameterEncoding {
+    switch self {
+      default: JSONEncoding.default
+    }
+  }
+
+  var headers: HTTPHeaders? {
+    switch self {
+      default: nil
+    }
+  }
+
+  var sampleData: Data {
+    switch self {
+      default: Data()
+    }
+  }
 }

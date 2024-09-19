@@ -7,6 +7,4 @@
 
 import Foundation
 
-protocol I___VARIABLE_productName___PageViewModel: ObservableObject {
-	
-}
+protocol I___VARIABLE_productName___PageViewModel: ObservableObject {}

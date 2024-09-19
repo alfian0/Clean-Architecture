@@ -9,9 +9,9 @@
 import Combine
 
 protocol ILocal___VARIABLE_productName___DAO {
-	func get(by id: Int) -> AnyPublisher<___VARIABLE_productName___Entity, Error>
-	func getAll() -> AnyPublisher<[___VARIABLE_productName___Entity], Error>
-	func add(with data: ___VARIABLE_productName___Entity) -> AnyPublisher<Bool, Error>
-	func update(with data: ___VARIABLE_productName___Entity) -> AnyPublisher<Bool, Error>
-	func delete(by id: Int) -> AnyPublisher<Bool, Error>
+  func get(by id: Int) -> AnyPublisher<___VARIABLE_productName___Entity, Error>
+  func getAll() -> AnyPublisher<[___VARIABLE_productName___Entity], Error>
+  func add(with data: ___VARIABLE_productName___Entity) -> AnyPublisher<Bool, Error>
+  func update(with data: ___VARIABLE_productName___Entity) -> AnyPublisher<Bool, Error>
+  func delete(by id: Int) -> AnyPublisher<Bool, Error>
 }
