@@ -11,12 +11,10 @@ import Combine
 
 //sourcery: Injected
 final class ___VARIABLE_productName___Repository: I___VARIABLE_productName___Repository {
-  private let localDAO: Local___VARIABLE_productName___DAO
-  private let remoteDAO: Remote___VARIABLE_productName___DAO
+  private let repositories: [any I___VARIABLE_productName___Repository]
 
-  init(localDAO: Local___VARIABLE_productName___DAO, remoteDAO: Remote___VARIABLE_productName___DAO) {
-    self.localDAO = localDAO
-    self.remoteDAO = remoteDAO
+  init(repositories: [any I___VARIABLE_productName___Repository]) {
+    self.repositories = repositories
   }
 
   func get(by id: Int) -> AnyPublisher<___VARIABLE_productName___DTO, Error> {

@@ -25,7 +25,7 @@ final class ___VARIABLE_productName___DomainAssembly: Assembly {
       guard let remoteDAO = resolver.resolve(Remote___VARIABLE_productName___DAO.self) else {
         fatalError()
       }
-      return ___VARIABLE_productName___Repository(localDAO: localDAO, remoteDAO: remoteDAO)
+      return ___VARIABLE_productName___Repository(repositories: [localDAO, remoteDAO])
     }
   }
 }
