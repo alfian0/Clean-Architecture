@@ -13,7 +13,7 @@ protocol I___VARIABLE_productName___Repository {
 
   func get(by id: Int) -> AnyPublisher<T, Error>
   func getAll() -> AnyPublisher<[T], Error>
-  func add(with data: T) -> AnyPublisher<Bool, Error>
+  func add(with data: [T]) -> AnyPublisher<Bool, Error>
   func update(with data: T) -> AnyPublisher<Bool, Error>
   func delete(by id: Int) -> AnyPublisher<Bool, Error>
 }
