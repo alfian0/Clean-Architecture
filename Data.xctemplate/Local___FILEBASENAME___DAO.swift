@@ -23,7 +23,7 @@ final class Local___VARIABLE_productName___DAO: I___VARIABLE_productName___Repos
       .eraseToAnyPublisher()
   }
 
-  func add(with data: ___VARIABLE_productName___Entity) -> AnyPublisher<Bool, Error> {
+  func add(with data: [___VARIABLE_productName___Entity]) -> AnyPublisher<Bool, Error> {
     return Fail(error: NSError(domain: "", code: 404))
       .eraseToAnyPublisher()
   }

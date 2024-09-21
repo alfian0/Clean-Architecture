@@ -27,7 +27,7 @@ final class ___VARIABLE_productName___Repository: I___VARIABLE_productName___Rep
       .eraseToAnyPublisher()
   }
 
-  func add(with data: ___VARIABLE_productName___DTO) -> AnyPublisher<Bool, Error> {
+  func add(with data: [___VARIABLE_productName___DTO]) -> AnyPublisher<Bool, Error> {
     return Fail(error: NSError(domain: "", code: 404))
       .eraseToAnyPublisher()
   }
