@@ -20,4 +20,4 @@ protocol I___VARIABLE_productName___Repository {
 
 protocol ILocal___VARIABLE_productName___DAO: I___VARIABLE_productName___Repository where T == ___VARIABLE_productName___Entity {}
 protocol IRemote___VARIABLE_productName___DAO: I___VARIABLE_productName___Repository where T == ___VARIABLE_productName___Response {}
-protocol I___VARIABLE_productName___DAO: I___VARIABLE_productName___Repository where T == ___VARIABLE_productName___DTO {}
+protocol I___VARIABLE_productName___DAO: I___VARIABLE_productName___Repository where T == ___VARIABLE_productName___Model {}

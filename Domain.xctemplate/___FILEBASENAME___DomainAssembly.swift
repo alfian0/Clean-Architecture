@@ -18,7 +18,7 @@ final class ___VARIABLE_productName___DomainAssembly: Assembly {
       return Remote___VARIABLE_productName___DAO()
     }
 
-    container.register(___VARIABLE_productName___Repository.self) { resolver in
+    container.register(___VARIABLE_productName___UseCase.self) { resolver in
       guard let localDAO = resolver.resolve(Local___VARIABLE_productName___DAO.self) else {
         fatalError()
       }
