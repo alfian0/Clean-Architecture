@@ -10,11 +10,14 @@ import Foundation
 import Combine
 
 //sourcery: Injected
-final class ___VARIABLE_productName___Repository: I___VARIABLE_productName___Repository {
-  private let repositories: [any I___VARIABLE_productName___Repository]
+final class ___VARIABLE_productName___Repository: I___VARIABLE_productName___DAO {
+  private let localDAO: any ILocal___VARIABLE_productName___DAO
+  private let remoteDAO: any IRemote___VARIABLE_productName___DAO
 
-  init(repositories: [any I___VARIABLE_productName___Repository]) {
-    self.repositories = repositories
+  // Use protocols instead of concrete implementations
+  init(localDAO: any ILocal___VARIABLE_productName___DAO, remoteDAO: any IRemote___VARIABLE_productName___DAO) {
+    self.localDAO = localDAO
+    self.remoteDAO = remoteDAO
   }
 
   func get(by id: Int) -> AnyPublisher<___VARIABLE_productName___DTO, Error> {

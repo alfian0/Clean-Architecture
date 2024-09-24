@@ -10,9 +10,7 @@ import CoreData
 import Combine
 
 //sourcery: Injected
-final class Local___VARIABLE_productName___DAO: I___VARIABLE_productName___Repository {
-  init() {}
-
+final class Local___VARIABLE_productName___DAO: ILocal___VARIABLE_productName___DAO {
   func get(by id: Int) -> AnyPublisher<___VARIABLE_productName___Entity, Error> {
     return Fail(error: NSError(domain: "", code: 404))
       .eraseToAnyPublisher()

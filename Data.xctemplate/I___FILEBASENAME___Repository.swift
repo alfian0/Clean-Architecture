@@ -17,3 +17,7 @@ protocol I___VARIABLE_productName___Repository {
   func update(with data: T) -> AnyPublisher<Bool, Error>
   func delete(by id: Int) -> AnyPublisher<Bool, Error>
 }
+
+protocol ILocal___VARIABLE_productName___DAO: I___VARIABLE_productName___Repository where T == ___VARIABLE_productName___Entity {}
+protocol IRemote___VARIABLE_productName___DAO: I___VARIABLE_productName___Repository where T == ___VARIABLE_productName___Response {}
+protocol I___VARIABLE_productName___DAO: I___VARIABLE_productName___Repository where T == ___VARIABLE_productName___DTO {}
