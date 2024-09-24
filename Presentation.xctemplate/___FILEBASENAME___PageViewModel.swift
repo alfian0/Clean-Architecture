@@ -12,11 +12,11 @@ import Combine
 //sourcery: Injected
 final class ___VARIABLE_productName___PageViewModel: ObservableObject {
   @Published var isLoading: Bool = false
-  private let coordinator: ___VARIABLE_productName___Coordinator
+  private let coordinator: I___VARIABLE_productName___Coordinator
   private let repository: any I___VARIABLE_productName___DAO
   private var cancellables: Set<AnyCancellable> = []
 
-  init(repository: any I___VARIABLE_productName___DAO, coordinator: ___VARIABLE_productName___Coordinator) {
+  init(repository: any I___VARIABLE_productName___DAO, coordinator: I___VARIABLE_productName___Coordinator) {
     self.repository = repository
     self.coordinator = coordinator
   }

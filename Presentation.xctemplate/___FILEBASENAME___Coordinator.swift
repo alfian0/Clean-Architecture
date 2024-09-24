@@ -9,7 +9,7 @@
 import UIKit
 import SwiftUI
 
-final class ___VARIABLE_productName___Coordinator: Coordinator {
+final class ___VARIABLE_productName___Coordinator: I___VARIABLE_productName___Coordinator {
   var childCoordinator: [any Coordinator] = [any Coordinator]()
   var navigationController: UINavigationController
 
